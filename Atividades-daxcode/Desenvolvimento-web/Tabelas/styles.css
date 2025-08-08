@@ -1,0 +1,44 @@
+body .titulo{
+
+color: blue;
+
+
+}
+
+
+body .link{
+
+color: rgb(0, 17, 252);
+
+}
+
+
+body .link2{
+
+    color: rgb(252, 0, 0);
+    
+}
+    
+
+body .imag{
+
+border-radius: 5%;
+border-color: black;
+
+
+}
+
+body .imag:hover{
+
+scale: 103%;
+
+}
+
+
+body .imag2{
+
+    border-radius: 5%;
+    border-color: aqua;
+    border-width: 100px;
+    
+    }

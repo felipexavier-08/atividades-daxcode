@@ -1,0 +1,305 @@
+*{
+
+    margin: 0  !important;
+    padding: 0  !important;
+    box-sizing: border-box  !important;
+    font-family: "Roboto", sans-serif  !important;
+    color: antiquewhite;
+    text-decoration: none !important;
+    /* !important é pra priorizar as configurações do meu css em relação ao Boostrap */
+    font-size: 1rem;
+
+}
+
+p{
+
+    font-size: 1em;
+
+}
+
+
+section{
+
+    min-height: 200px;
+
+}
+
+img{
+
+    width: 50px;
+
+}
+
+body{
+
+    background-color: #2f2f2f !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px  !important;
+    margin-right: 15px  !important;
+
+}
+
+header{
+
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+nav{
+
+    margin-top: 8px;
+    margin-right: 30px;
+    
+
+}
+
+.links{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+img{
+
+    border-radius: 50%;
+
+}
+
+p{
+
+    color: #c0c0c0;
+
+}
+
+a{
+
+    color: rgb(255, 145, 0);
+    font-size: 12px;
+
+}
+
+a:hover{
+
+    text-decoration: underline;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.15s
+
+}
+.doisprojetos_div{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+
+}
+
+
+.gerentifycard{
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    max-width: 250px;
+    border: 3px solid rgb(255, 145, 0);
+    border-radius: 5%;
+    box-shadow: 0 4 10px cornflowerblue; 
+    
+}
+.gerentifycard:hover{
+
+box-shadow: 0 0 15px rgb(255, 145, 0); 
+
+transform: translateY(-1px);
+
+}
+
+.theanotacoes{
+
+    padding: 10px;
+    max-width: 250px;
+    border: 3px solid rgb(255, 145, 0);
+    border-radius: 5%;
+    
+}
+.theanotacoes:hover{
+
+box-shadow: 0 0 15px rgb(255, 145, 0); 
+transform: translateY(-1px);
+
+}
+
+li{
+
+    margin-left: 35px;
+
+}
+
+li:hover{
+
+    
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+
+    i{
+
+        color: cornflowerblue;
+
+    }
+
+}
+
+h2:hover{
+
+    
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+
+}
+
+input{
+
+    color: #000000;
+    border-radius: 3px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    font-size: 18px;
+
+}
+
+textarea{
+
+    color: #2f2f2f;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    font-size: 104x;
+    height: 150px;
+
+
+}
+
+#contato{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form{
+
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 145, 0);
+    margin-top: 20px;
+    border-radius: 3%;
+    padding: 3px;
+    min-height: 350px;
+    min-width: 300px;
+    margin-bottom: 100px;
+    
+}
+form:hover{
+
+    box-shadow: rgb(255, 145, 0) 0px 8px 15px; 
+
+}
+
+
+button{
+
+    width: max-content;
+    margin-bottom: 15px;
+    
+
+}
+
+button:hover{
+
+    scale: 105%;
+    cursor: pointer;
+
+}
+
+.enviarmensagem{
+
+    background-color: rgb(255, 145, 0);
+    border: none;
+    
+    border-radius: 5px;
+
+}
+
+
+.habilidades{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ok:hover{
+
+    scale: 115%;
+    cursor: pointer;
+
+}
+
+hr{
+
+    border-color: cornflowerblue;
+
+}
+
+footer{
+
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+    gap: 25px;
+    padding: 5px;
+    background-color: #292929;
+
+}
+
+
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 145, 0);
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation.center::after {
+  transform-origin: bottom center;
+}

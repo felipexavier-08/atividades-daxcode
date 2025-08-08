@@ -1,0 +1,23 @@
+body .group{
+
+    max-width: 300px;
+    background-color: rgb(180, 202, 202);
+    border-radius: 10%;
+
+}
+
+body .group2{
+
+    border-radius: 3%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    max-width: 300px;
+    background-color: rgb(93, 168, 253);
+
+}
+
+body .inputs{
+    
+    color: rgb(33, 43, 43);
+
+}

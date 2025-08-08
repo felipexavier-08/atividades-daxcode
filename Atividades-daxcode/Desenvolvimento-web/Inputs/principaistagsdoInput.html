@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais tags do Input</title>
+    <style>
+
+        .primeiroinput{
+            color: blue;
+        }
+        .primeiroinput2{
+            color: rgb(54, 153, 104);
+        }
+        .primeiroinput3{
+            color: rgb(255, 155, 4);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align = "Center">Principais inputs</h1>
+
+    <div class = "primeiraparte">
+
+        <h2 class =  "primeiroinput" >Você pode escolher mais de uma opção</h2>
+        <input  type = "checkbox" id = "cinema">
+        <label class =  "primeiroinput" for="cinema">Cinema</label><br>
+        <input  type = "checkbox" id = "futebol">
+        <label class =  "primeiroinput" for="futebol">Futebol</label><br>
+        <input  type = "checkbox" id = "churrasco">
+        <label class =  "primeiroinput" for="churrasco">Churrasco</label>
+
+    </div>
+
+    <br><hr>
+
+    <div class = "segundaparte">
+
+        <h2 class = "primeiroinput2" >inputs do tipo TEXT e do tipo NUMBER</h2>
+        <label class =  "primeiroinput2" for="nome">Nome</label><br>
+        <input type="text" id = "nome"><br><br>
+
+        <label class =  "primeiroinput2" for="numero">Digite um número</label><br>
+        <input type="number" id = "numero"><br><br>
+
+        <label class =  "primeiroinput2" for="senha">Senha</label><br>
+        <input type="password" id = "senha">
+        
+    </div>
+
+    <br><hr>
+
+        <div class = "terceiraparte">
+
+        <h2 class = "primeiroinput3" >Você só pode escolher uma opção</h2>
+        <input type="radio" id = "doce" name = "opcao">
+        <label class =  "primeiroinput3" for="doce">Doce</label><br>
+
+        <input type="radio" id = "salgado" name = "opcao">
+        <label class =  "primeiroinput3" for="salgado">Doce</label><br>
+
+        <input type="radio" id = "salgadoedoce" name = "opcao">
+        <label class =  "primeiroinput3" for="salgadoedoce">Salgado/Doce</label><br>
+        
+       <br><input type="button" value = "Enviar">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    /*font-size: 12px;*/
+
+}
+
+
+
+header{
+
+    width: 100%;
+    padding: 8px 60px;
+    background: #ff331c;
+    background: linear-gradient(180deg, rgba(255, 51, 28, 1) 0%, rgba(255, 101, 54, 1) 100%);
+}
+
+/*
+#F6422E 31
+#FD5C32 57
+#FF6433 100
+*/
+
+.primeiraDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+.primeiraDivfilho{
+    display: flex;
+    align-items: center;
+
+}
+.primeiraDivfilho nav{
+    display: flex;
+    gap: 15px;
+
+}
+
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+#links a i{
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #F6422E;
+
+}
+#links a .estiloDiferente{
+    background-color:transparent;
+    color: #fff;
+    font-size: 22px;
+
+}
+
+
+.primeiraDivfilho2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.segundaDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -50px;
+    padding-bottom: 10px;
+
+}
+.segundaDiv img{
+    margin-right: -50px;
+
+}
+
+.inputs{
+    width: 800px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+
+}
+.inputs input{
+    color: black;
+    width: 800px;
+    height: 45px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 6px;
+
+}
+
+a:hover{
+
+    color: #ffb9ab;
+
+}

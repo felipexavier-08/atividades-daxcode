@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+header{
+
+    background-color: #00050d;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+
+}
+
+header a{
+
+    border-radius: 5px;
+    padding: 8px 11px;
+
+}
+
+header a:hover{
+
+    background-color: white;
+    color: black;
+    padding: 8px 11px;
+
+   /* .roda{
+
+        color: #00050d;
+
+    }*/
+
+}
+
+a:hover .roda{
+
+    color: #00050d;
+
+
+}
+
+.primeiraDiv{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.primeiraDiv img{
+
+    width: 110px;
+    cursor: pointer;
+    margin-right: 35px;
+    margin-left: 55px;
+
+}
+
+.primeiraDiv nav{
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 5px;
+
+}
+
+.primeiraDiv nav a .roda{
+
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 20px;
+    gap: 2px;
+
+}
+
+#link{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.segundaDiv{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 40px;
+
+}
+
+.icones:hover{
+
+    background-color: white;
+    color: #00050d;
+    border-radius: 50%;
+
+
+}
+button:hover i{
+
+    color: #00050d;
+
+}
+
+.segundaDiv button{
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+
+}
+
+
+.segundaDiv i {
+
+    font-size: 20px;
+
+}
+
+.segundaDiv img{
+
+    width: 30px;
+
+}
+
+#assinar{
+
+    background-color: #1a98ff;
+    margin-right: 5px;
+    padding: 13px 13px;
+    border-radius: 10px;
+    padding: 0px;
+
+
+}
+#assinar:hover{
+
+    background-color: #389ef1;
+
+}
+
+.icones:hover i{
+
+    color: #00050d;
+
+}
+
+.segundaDiv .imgs{
+
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 5px solid;
+    border-radius: 50%;
+    border-color: black;
+
+}
+
+.segundaDiv .imgs:hover{
+
+    cursor: pointer;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-color: white;
+
+}
+
