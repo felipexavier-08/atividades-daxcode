@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+
+        <input id="inputNome" type="text" placeholder="Nome">
+        <input id="inputIdade" type="number" placeholder="Idade">
+        <button type="button"> Criar Parágrafo </button>
+
+        
+
+    </div>
+
+    <script>
+
+        const input1 = document.querySelector("#inputNome")
+        const input2 = document.querySelector("#inputIdade")
+        const btn = document.getElementsByTagName("button")[0]
+        const paragrafo = document.createElement("p");
+        const nm = input1.value
+        const id = input2.value;
+        const body = document.body;
+
+        function criarParagrafo(nome, idade) {
+            
+            return paragrafo.textContent = `Nome:${nm}, idade: ${id}`
+
+        }
+
+        function callBack(nome, idade, fn) {
+           return fn(nome, idade)
+        }
+
+        btn.addEventListener("click", function(){
+
+            const result = callBack(nm, id, criarParagrafo)
+
+            body.appendChild(result)
+
+        })
+
+    </script>
+    
+</body>
+</html>
+
+/*continuar*/

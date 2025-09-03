@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progresso</title>
+</head>
+<body>
+
+    <div align="Center" id="div-progresso">
+        <progress id="barradeProgresso" value="0" max="100"></progress>
+        <span id="progressoPorcentagem">0%</span>
+    </div>
+
+    <script>
+
+        const progressBar = document.getElementById('barradeProgresso')
+        const porcentagem = document.getElementById('progressoPorcentagem')
+        const reiniciar = document.getElementById('rn')
+        let progressoatual = 0
+
+        function atProgresso() {
+            progressoatual += 10;
+            if (progressoatual <= 100) {
+                progressBar.value = progressoatual
+                porcentagem.textContent = progressoatual + '%'
+            }
+             else {
+                clearInterval(progresso)
+            }
+        }
+
+        const progresso = setInterval(atProgresso, 500)
+
+    </script>
+    
+</body>
+</html>

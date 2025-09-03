@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body align="Center">
+
+    <form action="">
+
+        <label for="nome"> Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="sobrenome"> sobrenome:</label>
+        <input type="text" id="sobrenome">
+
+        <button id="enviardados">Enviar</button>
+
+    </form>
+    
+
+    <script>
+
+        const btn = document.getElementById("enviardados")
+        const form = document.forms[0]
+        const body = document.body
+
+        btn.addEventListener("click", (ev) => {
+            ev.preventDefault()
+
+            const myPromise = new Promise((resolve, reject) => {
+                const nome = form["nome"].value
+                const sobrenome = form["sobrenome"].value
+
+                if(!nome.trim() && sobrenome.trim()){
+                    
+                    reject("campo [Nome] está vazio")
+                
+                }
+                else if (!sobrenome.trim() && nome.trim()){
+                    
+                    reject("campo [sobrenome] está vazio")
+                    
+                }
+                else if (!nome.trim() && !sobrenome.trim()){
+
+                    reject("Os campos [nome] e [sobrenome] estão vazios")
+                }
+                else{
+                    const pessoa = {
+                        _nome: nome,
+                        _sobrenome: sobrenome
+                    }
+                    resolve(pessoa)
+                }
+            })
+
+            myPromise.then((Response) => {
+                alert(`Os dados [${Response._nome}] e [${Response._sobrenome}] foram salvos`)
+                const p = document.createElement("p")
+                p.innerText = `Bem-vindo ${Response._nome} ${Response._sobrenome}`
+                body.appendChild(p)
+            })
+            .catch((error) => alert(error))
+
+        })
+
+    </script>
+
+</body>
+</html>

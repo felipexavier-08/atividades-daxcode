@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    
+    <div>
+
+        <h2 id="timer"></h2>
+
+    </div>
+
+    <button id="start">Iniciar</button>
+    <button id="stop">Parar</button>
+
+    <script>
+
+        const txt = document.getElementById("timer")
+        const button = document.getElementById("start")
+        const fim = document.getElementById("stop")
+        let segundo = 0
+        let minuto= 0
+
+        const iniciar = () => {
+            return setInterval(() => {
+
+                txt.innerText = `${minuto}:${segundo}`
+
+                if(segundo == 60){
+                    
+                minuto = minuto + 1
+                segundo = 0
+
+                }
+                else{
+                    segundo = segundo + 1
+
+                }
+                
+
+            }, 100)
+        }
+        let idInterval;
+        button.addEventListener("click", () => {
+
+            idInterval = iniciar()
+
+        })
+        fim.addEventListener("click", () => {
+
+            clearInterval(idInterval)
+
+        })
+
+    </script>
+
+</body>
+</html>
