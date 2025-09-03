@@ -1,13 +1,20 @@
-const myPromise = new Promise((resolve, reject) => {
 
-    const pessoa ={
 
-        nome: "carlos"
+const myPromise = new Promise((resolve) => {
 
-    }
-    resolve(pessoa)
-})
+
+    setTimeout(() => {
+    
+        const pessoa ={
+
+            nome: "carlos"
+            }
+        resolve(pessoa)
+        })
+
+    }, 1000);
+ 
 
 myPromise.then((Response) => {
-    console.log(Response.nome)
+    console.log(Response)
 })
